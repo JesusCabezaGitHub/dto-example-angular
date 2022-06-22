@@ -1,0 +1,11 @@
+<h1>Mis Productos</h1>
+<ng-container *ngIf="productsList.length > 0">
+  <app-product
+  *ngFor="let product of productsList"
+  [title]="product.title"
+  [img]="product.img"
+  [description]="product.description"
+  [price]="product.price"
+  ></app-product>
+
+</ng-container>
